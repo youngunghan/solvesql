@@ -1,13 +1,15 @@
 -- Problem: Species and Mass of Penguins
 -- URL: https://solvesql.com/problems/species-and-mass-of-penguins/
 
-SELECT
+SELECT 
   species,
-  AVG(body_mass_g) as avg_mass
-FROM
+  body_mass_g
+FROM 
   penguins
-GROUP BY
-  species
-ORDER BY
-  avg_mass DESC,
-  species ASC;
+WHERE 
+  species IS NOT NULL 
+  AND body_mass_g IS NOT NULL
+ORDER BY 
+  body_mass_g DESC,    
+  species ASC;         
+
