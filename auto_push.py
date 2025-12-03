@@ -3,7 +3,7 @@ import os
 import subprocess
 import sys
 
-WATCH_DIR = "."
+WATCH_DIR = "./Advent_of_SQL_2025"
 EXTENSIONS = [".sql"]
 CHECK_INTERVAL = 3  # seconds
 

@@ -1,6 +1,5 @@
 -- Problem: Species and Mass of Penguins
 -- URL: https://solvesql.com/problems/species-and-mass-of-penguins/
--- Based on standard Palmer Penguins dataset
 
 SELECT
   species,
@@ -10,4 +9,5 @@ FROM
 GROUP BY
   species
 ORDER BY
-  avg_mass DESC;
+  avg_mass DESC,
+  species ASC;
